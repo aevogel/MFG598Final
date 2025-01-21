@@ -9,7 +9,7 @@ Interactive Map that displays U.S. Census Data
 import streamlit as st
 import pandas as pd
 import numpy as np
-import folium
+#import folium
 from streamlit_folium import st_folium
 import statistics
 import gc
