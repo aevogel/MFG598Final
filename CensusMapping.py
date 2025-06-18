@@ -24,7 +24,14 @@ st.write("")
 #gc.enable()
 
 # Read in Cleaned Data
-df = pd.read_csv("C:/Users/alexi/OneDrive/Documents/ASUGrad/2024 Fall/MFG598 Python/Final Project/Data/usa_00012_CLEANED_final.csv")
+file_id = "1oMKxIK-Y_oE6myW_p4JHN2so742QX1pY"
+
+# Construct the download URL
+url = f"https://drive.google.com/uc?id={file_id}&export=download"
+
+# Read the CSV file into a pandas DataFrame
+df = pd.read_csv(url)
+
 df["County"] = df["County"].astype(str)
 
 # Change Census Year - 1900 to 1950
